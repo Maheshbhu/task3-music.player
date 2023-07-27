@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title">Lotus lane</h2>
+            <h3 id="artist">Mahesh</h3>
+            <div class="img_container">
+                
+                <img src="images/img3.png" >
+            </div>
+            <audio src="songs/m1.mp3"></audio>
+            <!-- pogressbar -->
+<div class="progressbar_container" id="progress_container">
+    <div class="progress_duration">
+        <div class="current_time" id="current_time">
+            0:00
+        </div>
+        <div id="duration">2:44</div>
+    </div>
+    <div class="progress_div" id="progress_div">
+        <div class="progress" id="progress"></div>
+    </div>
+</div>
+
+            <!-- controls -->
+            <div class="music_controls">
+               
+                <i class="fas fa-backward" id="prev" title="previous"></i>
+                <i class="fas fa-play main-button" id="play" title="play"></i>
+                <i class="fas fa-forward" id="next" title="next"></i>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
